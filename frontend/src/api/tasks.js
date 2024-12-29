@@ -2,7 +2,6 @@ import axios from "axios";
 
 const API_URL = "http://localhost:5000/tasks";
 
-// Fetch all tasks
 export const fetchTasks = async () => {
   const response = await axios.get(API_URL);
   return response.data;
